@@ -1,0 +1,31 @@
++++
+date = "2016-05-02T02:06:23+09:00"
+title = "블로그 소개"
+subtitle = "이곳은 땅꾸의 블로그입니다"
+description = ""
+keywords = []
+tags = ["testTag", "tag2", "tag3"]
+slug = "hello-world"
++++
+
+안녕하세요. 땅꾸입니다.
+
+개발과 관련된 포스트를 남기기 위해 블로그를 만들었습니다.
+
+이 블로그는 [Hugo](https://gohugo.io/)라는 Static Website Engine을 이용해서 만들었고, [Github](https://github.com/)를 이용해 호스팅 하고 있습니다.
+
+모든 글은 편의을 위해 반말로 작성되며, 오직 이 포스트만 존댓말로 작성됩니다.
+
+여기부터 markdown 문서 테스트이므로 무시하셔도 좋습니다.
+
+{{< tweet 742203311508443136 >}}
+
+```c++
+#include <iostream>
+int main(int argc, char **argv){
+	std::cout << "hello world!" << std::endl;
+	return 0;
+}
+```
+
+{{< youtube KXSUEU7ISfQ >}}

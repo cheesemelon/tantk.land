@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  {{ partial "head.html" . }}
+
+  <body>
+
+    {{ partial "nav.html" . }}
+
+    <header class="header-section ">
+      <div class="intro-header no-img">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+              <div class="page-heading">
+                <h1>{{.Site.Title}}</h1>
+                {{if .Site.Params.subtitle}}
+                  <hr class="small">
+                  <span class="page-subheading">{{.Site.Params.subtitle}}</span>
+                {{end}}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+
+    <div role="main" class="container">
+      <div class="row">
+        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+          <div class="posts-list">
+            {{ range first 3 (where .Data.Pages "Type" "post") }}
+            <article class="post-preview">
+              <a href="{{ .Permalink }}">
+          	  <h2 class="post-title">{{ .Title }}</h2>
+          	
+          	  {{ if .Params.subtitle }}
+          	  <h3 class="post-subtitle">
+          	    {{ .Params.subtitle }}
+          	  </h3>
+          	  {{ end }}  
+              </a>
+
+              <p class="post-meta">
+                {{ .Date.Format "2006-01-02" }}
+              </p>
+            
+              <div class="post-entry">
+                {{ .Summary }}
+          	  <a href="{{ .Permalink }}" class="post-read-more">[Read&nbsp;More]</a>
+              </div>
+            
+             </article>
+            {{ end }}
+          </div>
+          <a href="post" class="show-all">See All Posts</a>
+        </div>
+      </div>
+    </div>
+
+    {{ partial "footer.html" . }}
+
+  </body>
+</html>

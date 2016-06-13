@@ -1,0 +1,13 @@
+<ul class="posts">
+{{ range . }}
+    <li class="posts-li">
+        <a href="{{ .Permalink }}" class="posts-a">
+        <h2 class="posts-title">{{ .Title }}</h2>
+        {{ if .Params.subtitle }}
+            <h3 class="posts-subtitle">{{ .Params.subtitle }}</h3>
+        {{ end }}  
+        </a>
+        <div class="posts-meta">{{ .Date.Format "2006-01-02" }}</div>
+    </li>
+{{ end }}
+</ul>
