@@ -1,3 +1,43 @@
-baseurl = "https://o-tantk.github.io/"
+baseurl = "/"
+title = "tantk land"
 languageCode = "euc-kr"
-title = "My New Hugo Site"
+MetaDataFormat = "toml"
+theme = "beautifulhugo"
+pygmentsUseClasses = true
+disqusShortname = "tantk"
+paginate = 10
+paginatePath = "/"
+
+[permalinks]
+    #page = "/:slug/"
+    #post = "/posts/:slug/"
+
+[Params]
+  logo = "img/avatar-icon.jpg"
+  subtitle = "We do what we must because we can."
+
+[Author]
+  name = "tantk"
+  email = "tantk90@hotmail.com"
+  github = "o-tantk"
+  twitter = "o_tantk"
+# facebook = "username"
+# linkedin = "pub/username/X/YYY/ZZZ"
+# stackoverflow = "XXXXXXX/username"
+# soundcloud = "username"
+# wikipedia = "username"
+
+[[menu.main]]
+    name = "About"
+    url = "/page/about/"
+    weight = 1
+	
+[[menu.main]]
+    name = "Posts"
+    url = "/post/"
+    weight = 2
+
+[[menu.main]]
+    name = "Tags"
+    url = "/tags/"
+    weight = 3
