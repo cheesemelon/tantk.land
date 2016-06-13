@@ -3,7 +3,6 @@ title = "tantk land"
 languageCode = "euc-kr"
 MetaDataFormat = "toml"
 theme = "beautifulhugo"
-pygmentsUseClasses = true
 disqusShortname = "tantk"
 paginate = 10
 paginatePath = "/"
