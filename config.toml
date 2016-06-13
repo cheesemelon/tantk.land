@@ -2,7 +2,6 @@ baseurl = "/"
 title = "tantk land"
 languageCode = "euc-kr"
 MetaDataFormat = "toml"
-theme = "beautifulhugo"
 disqusShortname = "tantk"
 paginate = 10
 paginatePath = "/"
