@@ -9,7 +9,7 @@ body {
 }
 p {
   line-height: 1.5;
-  margin: 30px 0;
+  margin: 10px 0;
 }
 p a {
   /* text-decoration: underline */
@@ -17,6 +17,7 @@ p a {
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
+  margin: 40px 0 10px;
 }
 a {
   color: #008AFF;
@@ -256,56 +257,56 @@ footer .theme-by {
  
 /* --- Post preview --- */
 
-.post-preview {
+.posts-preview {
   padding: 20px 0;
   border-bottom: 1px solid #eee;
 }
 
 @media only screen and (min-width: 768px) {
-  .post-preview {
+  .posts-preview {
     padding: 35px 0;
   }
 }
 
-.post-preview:last-child {
+.posts-preview:last-child {
   border-bottom: 0;
 }
 
-.post-preview a {
+.posts-preview a {
   text-decoration: none;
   color: #404040;
 }
 
-.post-preview a:focus,
-.post-preview a:hover {
+.posts-preview a:focus,
+.posts-preview a:hover {
   text-decoration: none;
   color: #0085a1;
 }
 
-.post-preview .post-title {
+.posts-preview .posts-title {
   font-size: 30px;
   margin-top: 0;
 }
-.post-preview .post-subtitle {
+.posts-preview .posts-subtitle {
   margin: 0;
   font-weight: 300;
   margin-bottom: 10px;
 }
-.post-preview .post-meta,
-.post-heading .post-meta {
+.posts-preview .posts-meta,
+.posts-heading .posts-meta {
   color: #808080;
   font-size: 18px;
   font-style: italic;
   margin: 0 0 10px;
 }
-.post-preview .post-entry {
+.posts-preview .posts-entry {
 }
-.post-preview .post-read-more {
+.posts-preview .posts-read-more {
   font-weight: 800;
 }
 
 @media only screen and (min-width: 768px) {
-  .post-preview .post-title {
+  .posts-preview .posts-title {
     font-size: 36px;
   }
 }
@@ -339,25 +340,25 @@ footer .theme-by {
   -moz-transition: opacity 1s linear;
   transition: opacity 1s linear;
 }
-.intro-header .page-heading {
+.intro-header .pages-heading {
   text-align: center;
 }
-.intro-header.big-img .page-heading,
-.intro-header.big-img .post-heading {
+.intro-header.big-img .pages-heading,
+.intro-header.big-img .posts-heading {
   padding: 100px 0;
   color: #FFF;
   text-shadow: 1px 1px 3px #000;
 }
-.intro-header .page-heading h1 {
+.intro-header .pages-heading h1 {
   margin-top: 0;
   font-size: 50px;
 }
-.intro-header .post-heading h1 {
+.intro-header .posts-heading h1 {
   margin-top: 0;
   font-size: 35px;
 }
-.intro-header .page-heading .page-subheading,
-.intro-header .post-heading .post-subheading {
+.intro-header .pages-heading .pages-subheading,
+.intro-header .posts-heading .posts-subheading {
   font-size: 27px;
   line-height: 1.1;
   display: block;
@@ -365,19 +366,19 @@ footer .theme-by {
   margin: 10px 0 0;
   color: #808080;
 }
-.intro-header .post-heading .post-subheading {
+.intro-header .posts-heading .posts-subheading {
   margin-bottom: 20px;
 }
-.intro-header.big-img .page-heading .page-subheading,
-.intro-header.big-img .post-heading .post-subheading {
+.intro-header.big-img .pages-heading .pages-subheading,
+.intro-header.big-img .posts-heading .posts-subheading {
   font-weight: 400;
 }
-.intro-header.big-img .page-heading hr {
+.intro-header.big-img .pages-heading hr {
   box-shadow: 1px 1px 3px #000;
   -webkit-box-shadow: 1px 1px 3px #000;
   -moz-box-shadow: 1px 1px 3px #000;
 }
-.intro-header.big-img .post-heading .post-meta {
+.intro-header.big-img .posts-heading .posts-meta {
   color: #EEE;
 }
 .intro-header.big-img .img-desc {
@@ -397,14 +398,14 @@ footer .theme-by {
   .intro-header.big-img {
     margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
   } 
-  .intro-header.big-img .page-heading,
-  .intro-header.big-img .post-heading  {
+  .intro-header.big-img .pages-heading,
+  .intro-header.big-img .posts-heading  {
     padding: 150px 0;
   }  
-  .intro-header .page-heading h1 {
+  .intro-header .pages-heading h1 {
     font-size: 80px;
   }
-  .intro-header .post-heading h1 {
+  .intro-header .posts-heading h1 {
     font-size: 50px;
   }
   .intro-header.big-img .img-desc {
@@ -431,8 +432,8 @@ footer .theme-by {
     width: 100%;
     height: 220px;
   }
-  .intro-header.big-img .page-heading,
-  .intro-header.big-img .post-heading {
+  .intro-header.big-img .pages-heading,
+  .intro-header.big-img .posts-heading {
     display: none;
   }
   .header-section.has-img .big-img {
@@ -645,4 +646,38 @@ table tr td :last-child {
     padding: 0;
     float: right;
     color: #808080;
+}
+
+.see-all-posts:before {
+    clear: both;
+}
+
+.see-all-posts {
+    display: table;
+    padding: 0 10px;
+	background:#404040;
+	color:#fff;
+	text-decoration:none;
+	-moz-border-radius-bottomright:4px;
+	-webkit-border-bottom-right-radius:4px;	
+	border-bottom-right-radius:4px;
+	-moz-border-radius-topright:4px;
+	-webkit-border-top-right-radius:4px;	
+	border-top-right-radius:4px;
+	-moz-border-radius-topleft:4px;
+	-webkit-border-top-left-radius:4px;	
+	border-top-left-radius:4px;
+	-moz-border-radius-bottomleft:4px;
+	-webkit-border-bottom-left-radius:4px;	
+	border-bottom-left-radius:4px;
+}
+
+.see-all-posts:hover {
+    background: #0084a1;
+    color: white;
+    text-decoration:none;
+}
+
+.blog-post {
+    margin-top: 30px;
 }

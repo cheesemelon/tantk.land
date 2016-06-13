@@ -14,14 +14,10 @@
     <div role="main" class="container">
       <div class="row">
         <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-            {{ range (.Paginate (.Data.Pages.GroupByDate "2006")).PageGroups }}
+            {{ range .Data.Pages.GroupByDate "2006" }}
             <h1 class="posts-year">{{(index .Pages 0).Date.Format "2006"}}</h1>
               {{ partial "post_list.html" .Pages }}
             {{ end }}
-
-            <center>
-            {{ template "_internal/pagination.html" . }}
-        </center>
         </div>
       </div>
     </div>

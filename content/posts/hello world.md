@@ -2,8 +2,6 @@
 date = "2016-05-02T02:06:23+09:00"
 title = "블로그 소개"
 subtitle = "이곳은 땅꾸의 블로그입니다"
-description = ""
-keywords = []
 tags = ["test"]
 slug = "hello-world"
 +++

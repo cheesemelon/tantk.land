@@ -9,9 +9,9 @@
 
     <!-- <div role="main" class="container main-content"> -->
 
-      {{ if eq .Type "post" }}
+      {{ if eq .Type "posts" }}
         {{ partial "post.html" . }}
-      {{ else if eq .Type "page" }}
+      {{ else if eq .Type "pages" }}
         {{ partial "page.html" . }}
       {{ else }}
         NO MATCHING PARTIAL

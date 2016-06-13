@@ -7,8 +7,8 @@ paginate = 10
 paginatePath = "/"
 
 [permalinks]
-    #page = "/:slug/"
-    #post = "/posts/:slug/"
+    pages = "/:slug/"
+    posts = "/posts/:slug/"
 
 [Params]
   logo = "img/avatar-icon.jpg"
@@ -27,12 +27,12 @@ paginatePath = "/"
 
 [[menu.main]]
     name = "About"
-    url = "/page/about/"
+    url = "/about/"
     weight = 1
 	
 [[menu.main]]
     name = "Posts"
-    url = "/post/"
+    url = "/posts/"
     weight = 2
 
 [[menu.main]]
