@@ -4,13 +4,14 @@ title = "블로그 소개"
 subtitle = "이곳은 땅꾸의 블로그입니다"
 description = ""
 keywords = []
-tags = ["testTag", "tag2", "tag3"]
+tags = ["test"]
 slug = "hello-world"
 +++
 
 안녕하세요. 땅꾸입니다.
 
 개발과 관련된 포스트를 남기기 위해 블로그를 만들었습니다.
+특히, 기존에 에버노트를 이용해서 개인적으로 작성했던 글들을 다시 정리하고자 하는 목적이 큽니다.
 
 이 블로그는 [Hugo](https://gohugo.io/)라는 Static Website Engine을 이용해서 만들었고, [Github](https://github.com/)를 이용해 호스팅 하고 있습니다.
 
