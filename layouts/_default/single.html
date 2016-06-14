@@ -3,8 +3,6 @@
 
   {{ partial "head.html" . }}
 
-  {{ template "_internal/google_analytics.html" . }}
-
   <body>
 
     {{ partial "nav.html" . }}
@@ -22,6 +20,8 @@
       <!-- </div> -->
 
     {{ partial "footer.html" . }}
+
+    {{ template "_internal/google_analytics.html" . }}
 
   </body>
 </html>
