@@ -10,7 +10,7 @@ title = "About"
 \* 그림 그리는거 좋아함.
 
 ## Feel free to contact
-* <i class="fa fa-envelope"></i> [tantk90 <i class="fa fa-at"></i> hotmail.com](mailto:tantk90@hotmail.com)  
+* <i class="fa fa-envelope"></i> [tantk90 at hotmail.com](mailto:tantk90@hotmail.com)  
 * <i class="fa fa-twitter-square"></i> [@o_tantk](https://twitter.com/o_tantk)
 
 ## SKILLS

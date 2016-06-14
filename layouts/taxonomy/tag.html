@@ -7,7 +7,7 @@
 
     {{ partial "nav.html" . }}
 
-    {{ partial "header_titleOnly.html" . }}
+    {{ partial "header_titleOnly.html" (print "# " .Title) }}
 
     <div role="main" class="container">
       <div class="row">

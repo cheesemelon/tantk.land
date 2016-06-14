@@ -94,10 +94,14 @@
     		  </li>		
 
         </ul>
-        <p class="copyright text-muted">Copyright {{ .Site.LastChange.Format "2006" }} &copy; {{ .Site.Author.name }}</p>
+        <p class="copyright text-muted">
+            <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/"><img alt="크리에이티브 커먼즈 라이선스" style="border-width:0" src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png" /></a>
+            &nbsp;by {{ .Site.Author.name }} in {{ .Site.LastChange.Format "2006" }}
+            </p>
   	        <!-- Please don't remove this, keep my open source work credited :) -->
     		<p class="theme-by text-muted">
-    		  Theme by
+                <a href="https://gohugo.io">Hugo</a>
+    		  | Theme by
     		  <a href="http://deanattali.com/beautiful-jekyll/">beautiful-jekyll</a>
     		</p>
       </div>

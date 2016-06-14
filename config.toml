@@ -3,8 +3,7 @@ title = "tantk land"
 languageCode = "euc-kr"
 MetaDataFormat = "toml"
 disqusShortname = "tantk"
-paginate = 10
-paginatePath = "/"
+googleAnalytics = "UA-79317002-1"
 
 [permalinks]
     pages = "/:slug/"

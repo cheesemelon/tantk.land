@@ -17,7 +17,7 @@ p a {
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
-  margin: 40px 0 10px;
+  margin: 30px 0 20px;
 }
 a {
   color: #008AFF;
@@ -28,7 +28,9 @@ a:focus {
 }
 blockquote {
   color: #808080;
-  font-style: italic;
+  padding-top: 0;
+  padding-bottom: 0;
+  margin: 10px auto;
 }
 hr.small {
   max-width: 100px;
@@ -67,6 +69,21 @@ img::-moz-selection {
 
 img {
   max-width: 100%;
+}
+
+article img {
+  margin: 10px auto;
+  display: block;
+}
+
+figcaption {
+  margin: 0 auto 10px;
+  max-width: 100%;
+  display: block;
+  color: #808080;
+  text-align: center;
+  font-size: 0.9em;
+  font-style: italic;
 }
 
 .disqus-comments {
@@ -679,5 +696,5 @@ table tr td :last-child {
 }
 
 .blog-post {
-    margin-top: 30px;
+    margin-top: 20px;
 }

@@ -1,7 +1,7 @@
 {{ if .Params.tags }}
 <ul class="tags">
     {{ range .Params.tags }}
-    <li class="tags-li"><a href="{{ "/tags/" | absURL }}{{ . | urlize }}" class="tags-a" title="Tag: {{ . }}">{{ . }}</a></li>
+    <li class="tags-li"><a href="{{ "/tags/" | absURL }}{{ . | urlize }}" class="tags-a" title="Tag: {{ . }}"># {{ . }}</a></li>
     {{ end }}
 </ul>
 {{ end }}

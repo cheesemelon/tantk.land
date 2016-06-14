@@ -7,7 +7,7 @@
 
     {{ partial "nav.html" . }}
 
-    {{ partial "header_titleOnly.html" . }}
+    {{ partial "header_titleOnly.html" .Title }}
 
     <div role="main" class="container">
       <div class="row">
@@ -15,7 +15,7 @@
      <ul class="tags">
     {{ $data := .Data }}
     {{ range $key, $value := .Data.Terms.ByCount }}
-    <li class="tags-li"><a href="{{ $value.Name | urlize }}" class="tags-a" title="Tag: {{ $value.Name }}">{{ $value.Name }}</a><sup>{{ $value.Count }}</sup></li>
+    <li class="tags-li"><a href="{{ $value.Name | urlize }}" class="tags-a" title="Tag: {{ $value.Name }}"># {{ $value.Name }}</a><sup>{{ $value.Count }}</sup></li>
     {{ end }}
    </ul>
         </div>
