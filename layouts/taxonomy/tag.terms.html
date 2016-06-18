@@ -1,28 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-  <body>
+<body>
 
     {{ partial "nav.html" . }}
-
+    
     {{ partial "header_titleOnly.html" .Title }}
 
     <div role="main" class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-     <ul class="tags">
-    {{ $data := .Data }}
-    {{ range $key, $value := .Data.Terms.ByCount }}
-    <li class="tags-li"><a href="{{ $value.Name | urlize }}" class="tags-a" title="Tag: {{ $value.Name }}"># {{ $value.Name }}</a><sup>{{ $value.Count }}</sup></li>
-    {{ end }}
-   </ul>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+                <ul class="tags">
+                    {{ $data := .Data }}
+                    {{ range $key, $value := .Data.Terms.Alphabetical }}
+                    <li class="tags-li">
+                        <a href="{{ $value.Name | urlize }}" class="tags-a" title="Tag: {{ $value.Name }}"># {{ $value.Name }}</a>
+                        <sup>{{ $value.Count }}</sup>
+                    </li>
+                    {{ end }}
+                </ul>
+            </div>
         </div>
-      </div>
     </div>
 
     {{ partial "footer.html" . }}
 
-  </body>
+</body>
+
 </html>

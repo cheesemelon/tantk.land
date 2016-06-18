@@ -2,22 +2,23 @@ baseurl = "/"
 title = "tantk land"
 languageCode = "euc-kr"
 MetaDataFormat = "toml"
+preserveTaxonomyNames = true
 disqusShortname = "tantk"
 googleAnalytics = "UA-79317002-1"
 
 [permalinks]
     pages = "/:slug/"
-    posts = "/posts/:slug/"
+    #posts = "/posts/:slug/"
 
 [Params]
   logo = "img/avatar-icon.jpg"
   subtitle = "We do what we must because we can."
 
 [Author]
-  name = "tantk"
-  email = "tantk90@hotmail.com"
-  github = "o-tantk"
-  twitter = "o_tantk"
+    name = "tantk"
+    email = "tantk90@hotmail.com"
+    github = "o-tantk"
+    twitter = "o_tantk"
 # facebook = "username"
 # linkedin = "pub/username/X/YYY/ZZZ"
 # stackoverflow = "XXXXXXX/username"
@@ -28,7 +29,7 @@ googleAnalytics = "UA-79317002-1"
     name = "About"
     url = "/about/"
     weight = 1
-	
+
 [[menu.main]]
     name = "Posts"
     url = "/posts/"

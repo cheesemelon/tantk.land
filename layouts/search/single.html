@@ -1,36 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  {{ partial "head.html" . }}
+{{ partial "head.html" . }}
 
-  <body>
+<body>
 
     {{ partial "nav.html" . }}
-
-
+    
     {{ partial "header_titleOnly.html" .Title }}
 
-
     <div role="main" class="container">
-      <div class="row">
-        <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
-          <script>
-            (function() {
-              var cx = '002547363204377981353:7kk-9faoi10';
-              var gcse = document.createElement('script');
-              gcse.type = 'text/javascript';
-              gcse.async = true;
-              gcse.src = 'https://cse.google.com/cse.js?cx=' + cx;
-              var s = document.getElementsByTagName('script')[0];
-              s.parentNode.insertBefore(gcse, s);
-            })();
-          </script>
-          <gcse:search></gcse:search>
+        <div class="row">
+            <div class="col-lg-8 col-lg-offset-2 col-md-10 col-md-offset-1">
+
+                {{ partial "google_search.html" }}
+
+            </div>
         </div>
-      </div>
     </div>
 
     {{ partial "footer.html" . }}
 
-  </body>
+</body>
+
 </html>

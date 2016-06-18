@@ -2,18 +2,21 @@
 
 body {
   font-family: 'Nanum Gothic', 'Helvetica Neue', Helvetica, Arial, sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   color: #404040;
   position: relative;
   background: #FFF;
 }
 p {
-  line-height: 1.5;
-  margin: 10px 0;
+  line-height: 1.7;
+  margin: 20px 0;
 }
 p a {
   /* text-decoration: underline */
   color: #008AFF;
+}
+li {
+  margin: 10px 0;
 }
 h1,h2,h3,h4,h5,h6 {
   font-weight: 800;
@@ -410,7 +413,7 @@ footer .theme-by {
 }
 @media only screen and (min-width: 768px) {
   .intro-header {
-    margin-top: 130px;
+    margin-top: 150px;
   }
   .intro-header.big-img {
     margin-top: 91px;  /* Full navbar is small navbar + 20px padding on each side when expanded */
@@ -619,7 +622,7 @@ table tr td :last-child {
 }
 
 .posts-li {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 .posts-li:after {
@@ -652,7 +655,7 @@ table tr td :last-child {
 }
 
 .posts-subtitle {
-    margin-top: 5px;
+    margin-top: 10px;
     padding: 0;
     font-size: 0.8em;
     color: #808080;
@@ -697,4 +700,23 @@ table tr td :last-child {
 
 .blog-post {
     margin-top: 20px;
+}
+
+/* Fix google custom search's css caused by bootstrap */
+.gsc-control-cse .gsc-table-result {
+	font-family : inherit;
+}
+
+.gsc-control-cse .gsc-input-box {
+	height : inherit;
+}
+
+input.gsc-input,
+.gsc-input-box,
+.gsc-input-box-hover,
+.gsc-input-box-focus,
+.gsc-search-button, input.gsc-search-button-v2 {
+	box-sizing  : content-box;
+	line-height : normal;
+	margin-top  : 0px;
 }
