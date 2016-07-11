@@ -5,9 +5,7 @@ title = "About"
 +++
 
 # tantk == 땅꾸
-게임 개발을 꿈꾸는 덕후.
-
-\* 그림 그리는거 좋아함.
+A game developer wannabe.
 
 ## Feel free to contact
 * <i class="fa fa-envelope"></i> [tantk90 at hotmail.com](mailto:tantk90@hotmail.com)  

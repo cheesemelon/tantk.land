@@ -5,11 +5,11 @@ subtitle = "이곳은 땅꾸의 블로그입니다"
 tags = ["test"]
 +++
 
-안녕하세요. 땅꾸입니다.
+# 안녕하세요. 땅꾸입니다.
 
 이 블로그는 [Hugo](https://gohugo.io/)라는 Static Website Engine을 이용해서 만들었고, [Github](https://github.com/)를 이용해 호스팅 하고 있습니다.
 
-#### 이 아래는 markdown 문서의 테스트이므로 무시하셔도 좋습니다.
+# 이 아래는 markdown 문서의 테스트이므로 무시하셔도 좋습니다.
 
 Windows OS의 경로 최대길이는 `MAX_PATH`라는 상수값 260으로 제한되어 있다.
 
