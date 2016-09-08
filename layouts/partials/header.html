@@ -24,7 +24,13 @@
       {{ end }}
       
       {{ if eq .Type "posts" }}
-      <span class="post-meta">{{ .Date.Format "2006-01-02" }} by <a href="https://twitter.com/{{.Site.Author.twitter }}" title="Twitter">{{ .Site.Author.name }}</a></span>
+        <span class="post-meta">{{ .Date.Format "2006-01-02" }} by 
+        {{ if .Site.Author.twitter }}
+            <a href="https://twitter.com/{{.Site.Author.twitter }}" title="Twitter">{{ .Site.Author.name }}</a>
+        {{ else }}
+            {{ .Site.Author.name }}
+        {{ end }}
+        </span>
       {{ end }}
 
       {{ partial "tags.html" . }}
@@ -51,7 +57,13 @@
       {{ end }}
       
       {{ if eq .Type "posts" }}
-      <span class="post-meta">{{ .Date.Format "2006-01-02" }} by <a href="https://twitter.com/{{.Site.Author.twitter }}" title="Twitter">{{ .Site.Author.name }}</a></span>
+        <span class="post-meta">{{ .Date.Format "2006-01-02" }} by 
+        {{ if .Site.Author.twitter }}
+            <a href="https://twitter.com/{{.Site.Author.twitter }}" title="Twitter">{{ .Site.Author.name }}</a>
+        {{ else }}
+            {{ .Site.Author.name }}
+        {{ end }}
+        </span>
       {{ end }}
 
       {{ partial "tags.html" . }}

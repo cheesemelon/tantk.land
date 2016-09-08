@@ -9,7 +9,7 @@ A game developer wannabe.
 
 ## Feel free to contact
 * <i class="fa fa-envelope"></i> [tantk90 at hotmail.com](mailto:tantk90@hotmail.com)  
-* <i class="fa fa-twitter-square"></i> [@o_tantk](https://twitter.com/o_tantk)
+* <i class="fa fa-twitter-square"></i> [~~@o_tantk~~](https://twitter.com/o_tantk)
 
 ## SKILLS
 * Languages: C++(Primary), C, C#, GLSL, CUDA, JAVA, Python, ...  
