@@ -9,11 +9,9 @@ A game developer wannabe.
 
 ## Feel free to contact
 * <i class="fa fa-envelope"></i> [tantk90 at hotmail.com](mailto:tantk90@hotmail.com)  
-* <i class="fa fa-twitter-square"></i> [~~@o_tantk~~](https://twitter.com/o_tantk)
+* <i class="fa fa-github"></i> [o-tantk](https://github.com/o-tantk)
+* <i class="fa fa-stack-overflow"></i> [Stack overflow](http://stackoverflow.com/users/1435673/hyunan-kwon)
 
 ## SKILLS
-* Languages: C++(Primary), C, C#, GLSL, CUDA, JAVA, Python, ...  
+* Languages: C++(Primary), C, C#, GLSL, CUDA, ...  
 * Frameworks: STL, OpenGL, Unity3D, ...
-
-## [<i class="fa fa-bookmark"></i> Another blog](http://blog.naver.com/tantk)
-More private blog especially for **MOE**, **drawings** et el.
