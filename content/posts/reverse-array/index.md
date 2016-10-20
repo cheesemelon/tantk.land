@@ -1,7 +1,7 @@
 +++
 date = "2016-09-20T01:23:50+09:00"
 title = "배열 뒤집기"
-subtitle = "배타적 논리합(XOR)을 이용한 데이터 스왑"
+subtitle = "데이터 스왑에 대한 고찰"
 tags = ["Algorithm"]
 +++
 
@@ -62,3 +62,50 @@ float a = 1.0f, b = -1.0f;
 *(reinterpret_cast<int *>(&a)) ^= *(reinterpret_cast<int *>(&b));  
 ```
 비록 정수형 자료형의 크기와 동일한 크기를 가진 자료형만 해당되지만, 어엿하게 실수형 자료형에도 사용할 수 있다는 것이다.
+
+** XOR을 이요하면 정말 빠를까?
+
+먼저 XOR을 이용한 방법의 경우를 보자.
+``` c++
+; 7    : 	*(reinterpret_cast<int *>(&a)) ^= *(reinterpret_cast<int *>(&b));
+
+  00042	8b 45 f4	 mov	 eax, DWORD PTR _a$[ebp]
+  00045	33 45 e8	 xor	 eax, DWORD PTR _b$[ebp]
+  00048	89 45 f4	 mov	 DWORD PTR _a$[ebp], eax
+
+; 8    : 	*(reinterpret_cast<int *>(&b)) ^= *(reinterpret_cast<int *>(&a));
+
+  0004b	8b 45 e8	 mov	 eax, DWORD PTR _b$[ebp]
+  0004e	33 45 f4	 xor	 eax, DWORD PTR _a$[ebp]
+  00051	89 45 e8	 mov	 DWORD PTR _b$[ebp], eax
+
+; 9    : 	*(reinterpret_cast<int *>(&a)) ^= *(reinterpret_cast<int *>(&b));
+
+  00054	8b 45 f4	 mov	 eax, DWORD PTR _a$[ebp]
+  00057	33 45 e8	 xor	 eax, DWORD PTR _b$[ebp]
+  0005a	89 45 f4	 mov	 DWORD PTR _a$[ebp], eax
+```
+
+다음은 임시 메모리를 이용한 방법의 경우를 보자.
+``` c++
+; 12   : 	temp = a;
+
+  0005d	f3 0f 10 45 f4	 movss	 xmm0, DWORD PTR _a$[ebp]
+  00062	f3 0f 11 45 dc	 movss	 DWORD PTR _temp$[ebp], xmm0
+
+; 13   : 	a = b;
+
+  00067	f3 0f 10 45 e8	 movss	 xmm0, DWORD PTR _b$[ebp]
+  0006c	f3 0f 11 45 f4	 movss	 DWORD PTR _a$[ebp], xmm0
+
+; 14   : 	b = temp;
+
+  00071	f3 0f 10 45 dc	 movss	 xmm0, DWORD PTR _temp$[ebp]
+  00076	f3 0f 11 45 e8	 movss	 DWORD PTR _b$[ebp], xmm0
+```
+
+
+9999999회 수행한 결과.
+328 ms 42 ms
+
+298 ms 15ms
