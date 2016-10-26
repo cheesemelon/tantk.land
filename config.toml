@@ -1,4 +1,4 @@
-baseurl = "/"
+baseurl = "https://o-tantk.github.io/"
 title = "tantk land"
 languageCode = "euc-kr"
 MetaDataFormat = "toml"
