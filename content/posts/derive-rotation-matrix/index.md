@@ -1,7 +1,7 @@
 +++
 date = "2016-11-15T22:45:08+09:00"
 title = "회전 행렬(Rotation matrix) 유도"
-subtitle = "선형 변환 성질을 이용한 회전 행렬의 유도"
+subtitle = "선형 변환을 이용한 회전 행렬의 유도"
 tags = ["CG", "Math"]
 +++
 
