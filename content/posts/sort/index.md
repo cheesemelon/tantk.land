@@ -3,6 +3,7 @@ date = "2016-11-12T01:38:22+09:00"
 title = "퀵 정렬(Quicksort)과 병합 정렬(Merge sort)"
 subtitle = ""
 tags = ["Algorithm"]
+draft = true
 +++
 
 ``` c++

@@ -3,6 +3,7 @@ date = "2016-12-06T15:06:27+09:00"
 title = "그래픽스 렌더링 파이프라인 (Graphics Rendering Pipeline)"
 subtitle = "OpenGL 렌더링 파이프라인"
 tags = ["Computer Graphics"]
+draft = true
 +++
 
 # 사설
