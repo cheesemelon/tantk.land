@@ -5,8 +5,8 @@ title = "About"
 
 # tantk
 Game developer. Client Programmer.
-* Nexon - 2017.1. ~ 2020.7.
-* NCSOFT - 2020.8. ~
+* Nexon, 2017.1. ~ 2020.7.
+* NCSOFT, 2020.8. ~
 
 ## Skills
 * Unity3D (C#, HLSL)
